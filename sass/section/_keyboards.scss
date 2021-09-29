@@ -1,0 +1,32 @@
+.hero-section {
+    padding-bottom: 130px;
+    padding-top: 130px;
+
+
+
+
+
+    .keyboard-header {
+        margin-top: 10px;
+        font-weight: 600;
+        background: linear-gradient(145deg, #a2fe73, #35fdb2);
+        -webkit-background-clip: text;
+        animation: key 10s linear infinite;
+        color: transparent;
+
+    }
+
+
+}
+
+@-webkit-keyframes key {
+    from {
+        filter: hue-rotate(0deg);
+
+    }
+
+    to {
+        filter: hue-rotate(-360deg);
+
+    }
+}

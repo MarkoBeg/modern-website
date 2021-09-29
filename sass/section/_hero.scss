@@ -1,0 +1,43 @@
+.hero-section {
+    padding: 100px 0 100px;
+    background-color: #000;
+
+    h1 {
+        font-size: 68px;
+        font-weight: 300;
+        letter-spacing: 5px;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 40px 0 40px;
+
+        @media (max-width: $md) {
+            font-size: 55px;
+        }
+
+        span {
+            font-weight: 600;
+            background: linear-gradient(145deg, #a2fe73, #35fdb2);
+            -webkit-background-clip: text;
+            animation: hue 10s linear infinite;
+            color: transparent;
+        }
+    }
+
+    video {
+        width: 100%;
+    }
+
+}
+
+@-webkit-keyframes hue {
+    from {
+        filter: hue-rotate(0deg);
+
+    }
+
+    to {
+        filter: hue-rotate(-360deg);
+
+    }
+}

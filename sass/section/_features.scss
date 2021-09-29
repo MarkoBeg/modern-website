@@ -1,0 +1,65 @@
+.features {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    color: #fff;
+    background-image: linear-gradient(to top, #1b1b1b 8%, #373737 100%);
+    padding-bottom: 100px;
+
+    @media (max-width: $md) {
+        display: block;
+        font-size: 18px;
+        width: auto;
+        margin: auto;
+
+    }
+
+    .featured-item {
+        margin-top: -180px;
+        z-index: 1;
+
+        @media (max-width: $lg) {
+            padding: 50px;
+            margin-top: -50px;
+
+            img {
+                width: 150px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+
+        img {
+            width: 450px;
+
+            @media (max-width: 1300px) {
+                width: 100%;
+
+                img {
+                    width: 200px;
+
+                    p {
+                        font-size: 15px;
+
+                        @media (max-width: $xl) {
+                            width: 100%;
+                        }
+
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    p {
+        max-width: 200px;
+        margin: auto;
+    }
+
+
+
+}
